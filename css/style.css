@@ -43,18 +43,18 @@ nav {
 .nav a {
     padding: 8px 16px;
     text-decoration: none;
-    color: rgba(67,114,146,);
+    color: #03416c;
     margin-right: 30px;
     font-size: 18px;
     border: 2px solid transparent;
 }
 .active, .nav a:hover {
-    color:#00a5ec;
+    color:#00a5ec !important;
     border: 2px solid #00a5ec !important;
     border-radius: 16px;
 }
 .nav a:last-child {
-    color: white;
+    color: white !important;
     background-color: #03416c;
     border-radius: 16px;
     border: 2px solid #03416c !important;
@@ -72,10 +72,14 @@ nav {
     justify-content: flex-end;
     padding-bottom: 20px;
 }
+.icon img {
+    height: 40px;
+}
 /* main and content section */
 .row1 {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 .col3 {
     width: 30%;
@@ -84,7 +88,7 @@ nav {
     width: 70%;
 }
 .pad-b {
-    padding-bottom: 16px;
+    line-height: 1.5;
 }
 /* search and category */
 .pad-s {
@@ -92,6 +96,9 @@ nav {
 }
 .pad-b li {
     padding-bottom: 8px;
+}
+.category h3 {
+    padding: 16px 0;
 }
 /* search */
 .search, .category {
@@ -103,7 +110,7 @@ nav {
     background-color: #f9fafb;
     border-radius: 10px;
 }
-.material-symbols-outlined {
+.search-sym {
     color:#00a5ec;
 }
 .search-bar-input, .search-bar-input:focus, .search-bar-input:active {
@@ -120,14 +127,14 @@ nav {
 .category ul li {
     padding-left: 15px;
 }
-
-
-
 /* items to be shop */
 .grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.col5 {
+    padding-bottom: 30px;
 }
 .shop-list {
     border: 2px solid #ededed;
@@ -136,8 +143,25 @@ nav {
     min-height: 450px;
     border-radius: 16px;
 }
+.shop-list h4, .shop-list p {
+    padding:0 20px;
+    line-height: 1.5;
+}
+.shop-list p {
+    padding-bottom: 16px;
+}
 .bg-c-item {
     background-color: #f9fafb;
+    padding: 20px 20px 0 20px;
+    border-radius: 16px 16px 0 0;
+}
+.bg-c-item p {
+    font-size: 18px;
+    color: #00a5ec;
+}
+.shop-item {
+    display: flex;
+    justify-content: center;
 }
 .heart {
     display: flex;
@@ -145,4 +169,125 @@ nav {
 }
 .heart img {
     padding: 10px;
+}
+/* buttons */
+.button {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.button span {
+    padding-left: 10px;
+}
+.btn-cart {
+    color: white;
+    background-color: #03416c;
+    font-size: 20px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #03416c;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.add-cart {
+    font-size: 20px;
+    color: #00a5ec;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 2px solid #03416c;
+    border-radius: 24px;
+    cursor: pointer;
+}
+/* row 2 */
+.nxt-page {
+    padding: 20px;
+}
+.nxt-page a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 30px;
+}
+.nxt-page span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.active-page, .nxt-page a:hover {
+    color: #fff !important;
+    background-color: #03416c;
+}
+/* footer section */
+footer {
+    background-color: #03416c;
+    color: #fff;
+    font-size: 18px;
+}
+.about-us, .leatest-post {
+    padding: 40px;
+    width: 35%;
+}
+
+/* About Us */
+.about-us {
+    line-height: 1.5;
+}
+.fa-brands {
+    color:#fff;
+    margin-left: 20px;
+}
+.social-links {
+    padding: 20px 20px 20px 0;
+}
+
+.about-us p:nth-child(3) {
+    padding: 10px;
+}
+/* Quick links */
+.quick-link {
+    width: 30%;
+    padding: 40px;
+}
+.quick-link ul {
+    list-style-type: none;
+    padding: 10px;
+}
+.quick-link ul li {
+    padding-bottom: 10px;
+}
+.quick-link ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+}
+/* leatest post */
+.leatest {
+    display: flex;
+    padding: 20px 0;
+}
+.leatest-no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leatest-no h3 {
+    color: #00a5ec;
+}
+.jan {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px solid #00a5ec;
+    padding: 2px 5px;
+}
+.jan-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
+}
+.leatest-news {
+    padding-left: 16px;
 }
